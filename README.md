@@ -34,32 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-safe-int-max
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-safeintmax = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.safeintmax;
-})();
-</script>
+var safeintmax = require( '@stdlib/utils-safe-int-max' );
 ```
 
 #### safeintmax( dtype )
@@ -97,13 +95,8 @@ The following numeric **real** types are supported:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var safeintmax = require( '@stdlib/utils-safe-int-max' );
 
 var m = safeintmax( 'float64' );
 // returns 9007199254740991
@@ -113,11 +106,6 @@ m = safeintmax( 'float32' );
 
 m = safeintmax( 'float16' );
 // returns 2047
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -126,7 +114,69 @@ m = safeintmax( 'float16' );
 
 <!-- Section for describing a command-line interface. -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/utils-safe-int-max
+```
+
+</section>
+<!-- CLI usage documentation. -->
+
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: safeintmax [options] <dtype>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- CLI usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ safeintmax float16
+2047
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -217,16 +267,17 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/utils-safe-int-max/tree/deno
 [umd-url]: https://github.com/stdlib-js/utils-safe-int-max/tree/umd
 [esm-url]: https://github.com/stdlib-js/utils-safe-int-max/tree/esm
+[branches-url]: https://github.com/stdlib-js/utils-safe-int-max/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-safe-int-max/main/LICENSE
 
 <!-- <related-links> -->
 
-[@stdlib/utils/safe-int-min]: https://github.com/stdlib-js/utils-safe-int-min/tree/umd
+[@stdlib/utils/safe-int-min]: https://github.com/stdlib-js/utils-safe-int-min
 
-[@stdlib/utils/real-max]: https://github.com/stdlib-js/utils-real-max/tree/umd
+[@stdlib/utils/real-max]: https://github.com/stdlib-js/utils-real-max
 
-[@stdlib/utils/type-max]: https://github.com/stdlib-js/utils-type-max/tree/umd
+[@stdlib/utils/type-max]: https://github.com/stdlib-js/utils-type-max
 
 <!-- </related-links> -->
 
