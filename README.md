@@ -45,92 +45,25 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/utils-safe-int-max
-```
 
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
-
-<section class="usage">
-
-## Usage
-
-```javascript
-var safeintmax = require( '@stdlib/utils-safe-int-max' );
-```
-
-#### safeintmax( dtype )
-
-Returns the maximum **safe** integer capable of being represented by a numeric **real** type.
-
-```javascript
-var m = safeintmax( 'float64' );
-// returns 9007199254740991
-```
-
-The following numeric **real** types are supported:
-
--   `float64`: double-precision floating-point numbers
--   `float32`: single-precision floating-point numbers
--   `float16`: half-precision floating-point numbers
-
-</section>
-
-<!-- /.usage -->
 
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="notes">
 
-</section>
-
-<!-- /.notes -->
 
 <!-- Package usage examples. -->
 
-<section class="examples">
 
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var safeintmax = require( '@stdlib/utils-safe-int-max' );
-
-var m = safeintmax( 'float64' );
-// returns 9007199254740991
-
-m = safeintmax( 'float32' );
-// returns 16777215
-
-m = safeintmax( 'float16' );
-// returns 2047
-```
-
-</section>
-
-<!-- /.examples -->
 
 <!-- Section for describing a command-line interface. -->
 
-* * *
+
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -148,7 +81,7 @@ npm install -g @stdlib/utils-safe-int-max-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: safeintmax [options] <dtype>
@@ -175,7 +108,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ safeintmax float16
@@ -202,10 +135,9 @@ $ safeintmax float16
 
 <section class="related">
 
-* * *
-
 ## See Also
 
+-   <span class="package-name">[`@stdlib/utils-safe-int-max`][@stdlib/utils-safe-int-max]</span><span class="delimiter">: </span><span class="description">return the maximum safe integer capable of being represented by a numeric real type.</span>
 -   <span class="package-name">[`@stdlib/utils-safe-int-min`][@stdlib/utils/safe-int-min]</span><span class="delimiter">: </span><span class="description">return the minimum safe integer capable of being represented by a numeric real type.</span>
 -   <span class="package-name">[`@stdlib/utils-real-max`][@stdlib/utils/real-max]</span><span class="delimiter">: </span><span class="description">return the maximum finite value capable of being represented by a numeric real type.</span>
 -   <span class="package-name">[`@stdlib/utils-type-max`][@stdlib/utils/type-max]</span><span class="delimiter">: </span><span class="description">return the maximum value of a specified numeric type.</span>
@@ -227,7 +159,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -250,8 +182,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/utils-safe-int-max.svg
-[npm-url]: https://npmjs.org/package/@stdlib/utils-safe-int-max
+[npm-image]: http://img.shields.io/npm/v/@stdlib/utils-safe-int-max-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/utils-safe-int-max-cli
 
 [test-image]: https://github.com/stdlib-js/utils-safe-int-max/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/utils-safe-int-max/actions/workflows/test.yml?query=branch:main
