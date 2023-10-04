@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@esm/index.mjs';
+import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@v0.1.1-esm/index.mjs';
 ```
 
 #### safeintmax( dtype )
@@ -96,7 +96,7 @@ The following numeric **real** types are supported:
 <body>
 <script type="module">
 
-import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@esm/index.mjs';
+import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@v0.1.1-esm/index.mjs';
 
 var m = safeintmax( 'float64' );
 // returns 9007199254740991
