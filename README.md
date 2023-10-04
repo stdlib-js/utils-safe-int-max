@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-safe-int-max/tags). For example,
+
+```javascript
 import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@v0.1.1-deno/mod.js';
 ```
 
@@ -91,7 +96,7 @@ The following numeric **real** types are supported:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@v0.1.1-deno/mod.js';
+import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@deno/mod.js';
 
 var m = safeintmax( 'float64' );
 // returns 9007199254740991
