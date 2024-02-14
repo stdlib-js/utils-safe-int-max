@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@deno/mod.js';
+import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@v0.2.0-deno/mod.js';
 ```
 
 #### safeintmax( dtype )
@@ -91,7 +91,7 @@ The following numeric **real** types are supported:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@deno/mod.js';
+import safeintmax from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-safe-int-max@v0.2.0-deno/mod.js';
 
 var m = safeintmax( 'float64' );
 // returns 9007199254740991
